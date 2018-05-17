@@ -1,11 +1,11 @@
 module.exports = {
 
   magento: {
-    url:  process.env.MAGENTO_URL || 'http://magento2.demo-1.divante.pl/rest/',
-    consumerKey: process.env.MAGENTO_CONSUMER_KEY || 'alva6h6hku9qxrpfe02c2jalopx7od1q',
-    consumerSecret: process.env.MAGENTO_CONSUMER_SECRET || '9tgfpgoojlx9tfy21b8kw7ssfu2aynpm',
-    accessToken: process.env.MAGENTO_ACCESS_TOKEN || 'rw5w0si9imbu45h3m9hkyrfr4gjina8q',
-    accessTokenSecret: process.env.MAGENTO_ACCESS_TOKEN_SECRET || '00y9dl4vpxgcef3gn5mntbxtylowjcc9',
+    url:  process.env.MAGENTO_URL || 'http://storefront/rest/',
+    consumerKey: process.env.MAGENTO_CONSUMER_KEY || 'yk6tgkua1m9vb4lp7d8hbgxbg3y0u4wy',
+    consumerSecret: process.env.MAGENTO_CONSUMER_SECRET || 'ng3pwo2ufnvcjqfrgiieatc5kx6auvdk',
+    accessToken: process.env.MAGENTO_ACCESS_TOKEN || 'rh83nsis1lduaaa6dp4uyngvfrprv1di',
+    accessTokenSecret: process.env.MAGENTO_ACCESS_TOKEN_SECRET || '10gq106d9jj4lf8sbjav52la81pduydf',
   },
 
   kue: {}, // default KUE config works on local redis instance
@@ -13,7 +13,7 @@ module.exports = {
   db: {
 /*    driver: 'mongo',
     url: process.env.DATABASE_URL || 'mongodb://localhost:27017/rcom' */
-  
+
     driver: 'elasticsearch',
     url: process.env.DATABASE_URL || 'http://localhost:9200',
     indexName: 'vue_storefront_catalog'
